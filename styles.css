@@ -1,0 +1,68 @@
+/* Estilos para a barra lateral */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.sidebar-option {
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.options-dropdown {
+    display: none;
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar-option:hover .options-dropdown {
+    display: block;
+}
+
+/* Estilos para o conteúdo principal */
+.main-content {
+    margin-left: 200px; /* Largura da barra lateral */
+    padding: 20px;
+}
+
+.function-input {
+    margin-bottom: 20px;
+}
+
+.function-input input {
+    width: 200px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.function-input button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para a barra de formas */
+.shapes-bar {
+    position: fixed;
+    bottom: 0;
+    left: 200px; /* Largura da barra lateral */
+    width: calc(100% - 200px); /* Subtrai a largura da barra lateral */
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+}
+
+.shape {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: #fff;
+}
