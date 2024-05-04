@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Geogebra-like App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="sidebar">
+        <div class="sidebar-option">Inserir Função (f)</div>
+        <div class="sidebar-option">Configurações (⚙️)</div>
+        <div class="sidebar-option">
+            Opções (⚙️)
+            <ul class="options-dropdown">
+                <li>Otimizar</li>
+                <li>Lacuna</li>
+                <li>Ajuda</li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="function-input">
+            <input type="text" placeholder="Insira a função">
+            <button>Confirmar</button>
+        </div>
+        <div class="graph">
+            <!-- Gráfico será renderizado aqui -->
+        </div>
+    </div>
+    <div class="shapes-bar">
+        <div class="shape">Cubo</div>
+        <div class="shape">Círculo</div>
+        <div class="shape">Cone</div>
+        <!-- Adicione mais formas aqui -->
+    </div>
 </body>
 </html>
