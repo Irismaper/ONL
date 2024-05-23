@@ -1,38 +1,55 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geogebra-like App</title>
-    <link rel="stylesheet" href="styles.css">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Calculadora de Ponto Ótimo</title>
+
+<link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
-    <div class="sidebar">
-        <div class="sidebar-option">Inserir Função (f)</div>
-        <div class="sidebar-option">Configurações (⚙️)</div>
-        <div class="sidebar-option">
-            Opções (⚙️)
-            <ul class="options-dropdown">
-                <li>Otimizar</li>
-                <li>Lacuna</li>
-                <li>Ajuda</li>
-            </ul>
-        </div>
-    </div>
-    <div class="main-content">
-        <div class="function-input">
-            <input type="text" placeholder="Insira a função">
-            <button>Confirmar</button>
-        </div>
-        <div class="graph">
-            <!-- Gráfico será renderizado aqui -->
-        </div>
-    </div>
-    <div class="shapes-bar">
-        <div class="shape">Cubo</div>
-        <div class="shape">Círculo</div>
-        <div class="shape">Cone</div>
-        <!-- Adicione mais formas aqui -->
-    </div>
+
+<div id="calculator">
+
+  <div id="presets">
+
+    <!-- Botão com ícone SVG para a função quadrática -->
+
+    <button class="preset-btn" onclick="setFunction('x^2')" title="f(x) = x^2">
+
+      <svg class="icon" viewBox="0 0 24 24">fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" id="parabolic-function-2" data-name="Line Color" xmlns=http://www.w3.org/2000/svg class="icon line-color"><path id="secondary" d="M7,3c.22,6.85,1.22,12,3,12s2.78-5.15,3-12" style="fill: none; stroke: rgb(44, 169, 188); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path><path id="primary" d="M19,21V3m2,16H3" style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></svg>
+
+    </button>
+
+    <!-- Adicionar mais botões com ícones SVG para outras funções -->
+
+    <!-- ... -->
+
+  </div>
+
+  <input type="text" id="function-input" placeholder="Insira sua função, ex: 3x+2">
+
+  <div id="graph-container">
+
+    <canvas id="graph-canvas" width="600" height="400"></canvas>
+
+  </div>
+
+  <button id="draw-button" onclick="drawGraph()">Desenhar Gráfico</button>
+
+  <button id="optimal-point-button" onclick="findOptimalPoint()">Achar Ponto Ótimo</button>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>

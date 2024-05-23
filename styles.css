@@ -1,68 +1,141 @@
-/* Estilos para a barra lateral */
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 100%;
-    background-color: #f0f0f0;
+body {
+
+    font-family: Arial, sans-serif;
+  
+    background-color: #f7f7f7;
+  
+  }
+  
+   
+  
+  #calculator {
+  
+    width: 80%;
+  
+    margin: 0 auto;
+  
     padding: 20px;
-}
-
-.sidebar-option {
-    cursor: pointer;
-    margin-bottom: 15px;
-}
-
-.options-dropdown {
-    display: none;
-    list-style: none;
-    padding-left: 0;
-}
-
-.sidebar-option:hover .options-dropdown {
+  
+    background-color: #fff;
+  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+   
+  
+  #function-input {
+  
     display: block;
-}
-
-/* Estilos para o conteúdo principal */
-.main-content {
-    margin-left: 200px; /* Largura da barra lateral */
-    padding: 20px;
-}
-
-.function-input {
-    margin-bottom: 20px;
-}
-
-.function-input input {
-    width: 200px;
-    padding: 5px;
-    margin-right: 10px;
-}
-
-.function-input button {
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-/* Estilos para a barra de formas */
-.shapes-bar {
-    position: fixed;
-    bottom: 0;
-    left: 200px; /* Largura da barra lateral */
-    width: calc(100% - 200px); /* Subtrai a largura da barra lateral */
-    background-color: #f0f0f0;
+  
+    width: 100%;
+  
+    box-sizing: border-box;
+  
+    margin: 10px 0;
+  
     padding: 10px;
-    display: flex;
-}
-
-.shape {
+  
+    border: 1px solid #ddd;
+  
+  }
+  
+   
+  
+  #graph-container {
+  
+    width: 100%;
+  
+    height: 400px;
+  
+    margin: 20px 0;
+  
+    background-color: #f3f3f3;
+  
+    border: 1px solid #ddd;
+  
+  }
+  
+   
+  
+  button {
+  
+    padding: 10px;
+  
+    margin-top: 5px;
+  
+    margin-right: 5px;
+  
     cursor: pointer;
-    padding: 5px 10px;
+  
+    border: none;
+  
+    background-color: #4CAF50;
+  
+    color: white;
+  
+  }
+  
+   
+  
+  button:hover {
+  
+    background-color: #45a049;
+  
+  }
+  
+   
+  
+  #presets {
+  
+    margin-bottom: 10px;
+  
+  }
+  
+   
+  
+  .preset-btn {
+  
+    display: inline-flex;
+  
+    justify-content: center;
+  
+    align-items: center;
+  
+    width: 50px;
+  
+    height: 50px;
+  
+    border-radius: 50%;
+  
+    border: 2px solid #d4d4d4;
+  
     margin-right: 10px;
-    background-color: #007bff;
-    color: #fff;
-}
+  
+    background-color: white;
+  
+    transition: background-color 0.3s, transform 0.3s;
+  
+  }
+  
+   
+  
+  .preset-btn:hover {
+  
+    background-color: #e6e6e6;
+  
+    transform: scale(1.1);
+  
+  }
+  
+   
+  
+  .icon {
+  
+    width: 30px;
+  
+    height: 30px;
+  
+    fill: #333;
+  
+  }
